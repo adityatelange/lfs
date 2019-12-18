@@ -1,6 +1,6 @@
 set +h
 umask 022
 export LFS=/drone/src/base
-export x_SRC=/drone/src
+export SRC=/drone/src
 
 mkdir -pv ${LFS}
