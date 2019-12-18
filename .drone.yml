@@ -13,7 +13,5 @@ steps:
   - name: init
     commands:
       - chmod -R +x /drone/src/
-      - echo "###################### PRE ######################"
       - /drone/src/version-check.sh
       - /drone/src/install_requirements.sh
-      - echo "###################### POST ######################"
