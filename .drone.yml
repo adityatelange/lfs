@@ -13,5 +13,6 @@ steps:
   - name: init
     image: ubuntu:latest
     commands:
+      - chmod -R +x /drone/src/
       - /drone/src/version-check.sh
 
