@@ -11,7 +11,6 @@ clone:
   
 steps:
   - name: init
-    image: ubuntu:latest
     commands:
       - chmod -R +x /drone/src/
       - echo "###################### PRE ######################"
