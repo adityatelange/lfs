@@ -17,3 +17,4 @@ steps:
       - /drone/src/install_requirements.sh
       - /drone/src/version-check.sh
       - /drone/src/environment_config.sh
+      - /drone/src/get_packages_paches.sh
