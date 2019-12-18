@@ -2,4 +2,4 @@
 ln -sf bash /bin/sh 
 
 apt-get -y update 
-apt-get install build-essential
+apt-get install -y --no-install-recommends build-essential
