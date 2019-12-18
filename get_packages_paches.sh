@@ -6,5 +6,5 @@ wget --input-file=/drone/src/wget_list --continue --directory-prefix=${LFS}/sour
 
 # verify that all the correct packages are available before proceeding
 pushd ${LFS}/sources
-md5sum -c md5sums
+md5sum -c /drone/src/md5sums
 popd
