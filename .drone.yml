@@ -13,4 +13,5 @@ steps:
   - name: init
     image: ubuntu:latest
     commands:
-      - ls /drone/src/
+      - /drone/src/version-check.sh
+
