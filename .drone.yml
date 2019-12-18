@@ -1,0 +1,16 @@
+kind: pipeline
+name: lfs
+type: exec
+
+platform:
+  os: linux
+  arch: amd64
+
+clone:
+  depth: 1
+  
+  
+steps:
+  - name: init
+    commands:
+      - ls /drone/src/
