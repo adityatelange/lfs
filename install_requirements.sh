@@ -5,5 +5,5 @@ ln -sf bash /bin/sh
 apt-get -y update > /dev/null 2>&1
 apt-get install -y --no-install-recommends build-essential
 
-# bison gwak m4 python3 makeinfo
-apt-get install -y --no-install-recommends bison gawk m4 python3 texinfo
+# bison gwak m4 python3 makeinfo wget
+apt-get install -y --no-install-recommends bison gawk m4 python3 texinfo wget
