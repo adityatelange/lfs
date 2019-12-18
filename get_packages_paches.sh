@@ -2,7 +2,7 @@ mkdir -v ${LFS}/sources
 chmod -v a+wt ${LFS}/sources
 
 # download all of the packages and patches 
-wget --input-file=${SRC}/wget-list --continue --directory-prefix=${LFS}/sources
+wget --input-file=/drone/src/wget_list --continue --directory-prefix=${LFS}/sources
 
 # verify that all the correct packages are available before proceeding
 pushd ${LFS}/sources
