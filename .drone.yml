@@ -11,7 +11,8 @@ clone:
   
 steps:
   - name: init
+    image: ubuntu:latest	
     commands:
       - chmod -R +x /drone/src/
-      - /drone/src/version-check.sh
       - /drone/src/install_requirements.sh
+      - /drone/src/version-check.sh
