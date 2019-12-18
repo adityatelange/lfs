@@ -1,6 +1,5 @@
 kind: pipeline
 name: lfs
-type: exec
 
 platform:
   os: linux
