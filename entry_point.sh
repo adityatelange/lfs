@@ -31,3 +31,15 @@ wget --input-file=${SRC}/shared/wget_list --continue --directory-prefix=${LFS}/s
 pushd ${LFS}/sources
 md5sum -c ${SRC}/shared/md5sums
 popd
+
+mkdir -v $LFS/tools
+ln -sv $LFS/tools /
+
+pushd ${LFS}/sources
+    bash ${SRC}/building_packages/cross_binutils.sh
+popd
+
+
+pushd ${LFS}/sources
+    bash ${SRC}/building_packages/cross_gcc.sh
+popd
