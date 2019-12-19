@@ -10,11 +10,9 @@ clone:
   
   
 steps:
-  - name: init
+  - name: build
     image: ubuntu:latest	
     commands:
-      - chmod -R +x /drone/src/
-      - /drone/src/install_requirements.sh
-      - /drone/src/version-check.sh
-      - /drone/src/environment_config.sh
-      - /drone/src/get_packages_paches.sh
+      - cd /drone/src/
+      - export SRC=/drone/src
+      - bash entry_point.sh
