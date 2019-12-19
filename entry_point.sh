@@ -9,7 +9,7 @@ apt-get install -y --no-install-recommends bison gawk m4 python3 texinfo wget ca
 
 
 echo "##### Check proper pachages installed"
-bash ${SRC}/version_config.sh
+bash ${SRC}/shared/version_config.sh
 
 
 echo "##### Set Environment Variables"
@@ -26,8 +26,8 @@ echo "##### Get Packages and Patches"
 mkdir -v ${LFS}/sources
 chmod -v a+wt ${LFS}/sources
 # download all of the packages and patches 
-wget --input-file=${SRC}/wget_list --continue --directory-prefix=${LFS}/sources
+wget --input-file=${SRC}/shared/wget_list --continue --directory-prefix=${LFS}/sources
 # verify that all the correct packages are available before proceeding
 pushd ${LFS}/sources
-md5sum -c ${SRC}/md5sums
+md5sum -c ${SRC}/shared/md5sums
 popd
