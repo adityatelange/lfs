@@ -6,5 +6,5 @@ ln -sf bash /bin/sh > /dev/null 2>&1
 apt-get -y update > /dev/null 2>&1
 apt-get install -y --no-install-recommends build-essential > /dev/null 2>&1
 
-# bison gwak m4 python3 makeinfo wget
-apt-get install -y --no-install-recommends bison gawk m4 python3 texinfo wget > /dev/null 2>&1
+# bison gwak m4 python3 makeinfo wget ca-certificates
+apt-get install -y --no-install-recommends bison gawk m4 python3 texinfo wget ca-certificates > /dev/null 2>&1
